@@ -1,0 +1,2110 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UBDigitech - Future-Proofing Businesses For The AI Era. Website Development, SEO, GEO, AI Automation, Social Media Marketing & Performance Marketing.">
+    <meta name="keywords" content="UBDigitech, AI Automation, SEO, GEO, Website Development, Social Media Marketing, Digital Growth Agency">
+    <meta name="author" content="UBDigitech">
+    <meta property="og:title" content="UBDigitech - Premium AI-Driven Digital Growth Agency">
+    <meta property="og:description" content="Innovate • Digitalize • Elevate - UBDigitech helps businesses grow through AI-driven digital solutions.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>UBDigitech - Premium AI-Driven Digital Growth Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0057FF',
+                        navy: '#0A1F44',
+                        cyan: '#00C2FF',
+                        'light-bg': '#F8FAFC',
+                        'dark-bg': '#0B1120',
+                        'dark-card': '#111827',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'space': ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #0057FF; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #003db3; }
+        .dark ::-webkit-scrollbar-track { background: #1a1a2e; }
+        
+        /* Glassmorphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .dark .glass {
+            background: rgba(17, 24, 39, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 87, 255, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(0, 87, 255, 0.6); }
+        }
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes dash {
+            to { stroke-dashoffset: 0; }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; max-height: 0; }
+            to { opacity: 1; max-height: 500px; }
+        }
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+        
+        .animate-fadeUp { animation: fadeInUp 0.8s ease forwards; }
+        .animate-fadeLeft { animation: fadeInLeft 0.8s ease forwards; }
+        .animate-fadeRight { animation: fadeInRight 0.8s ease forwards; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+        .animate-gradient { 
+            background-size: 200% 200%;
+            animation: gradient-shift 4s ease infinite; 
+        }
+        .animate-spin-slow { animation: spin-slow 20s linear infinite; }
+        .animate-scaleIn { animation: scaleIn 0.5s ease forwards; }
+        
+        .scroll-animate { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+        .scroll-animate.visible { opacity: 1; transform: translateY(0); }
+        .scroll-animate-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s ease; }
+        .scroll-animate-left.visible { opacity: 1; transform: translateX(0); }
+        .scroll-animate-right { opacity: 0; transform: translateX(40px); transition: all 0.8s ease; }
+        .scroll-animate-right.visible { opacity: 1; transform: translateX(0); }
+        
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #0057FF, #00C2FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Card Hover Effects */
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 87, 255, 0.15);
+        }
+        .dark .card-hover:hover {
+            box-shadow: 0 20px 60px rgba(0, 194, 255, 0.1);
+        }
+        
+        /* Portfolio Grid */
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .portfolio-item .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0, 87, 255, 0.9), rgba(0, 194, 255, 0.9));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+        .portfolio-item:hover .overlay { opacity: 1; }
+        .portfolio-item:hover img { transform: scale(1.1); }
+        
+        /* Process Steps */
+        .process-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #0057FF, #00C2FF);
+            z-index: 0;
+        }
+        
+        /* FAQ Accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .faq-answer.open {
+            max-height: 300px;
+        }
+        
+        /* Testimonial Carousel */
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+        
+        /* Pricing Toggle */
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        .pricing-card.featured {
+            border: 2px solid #0057FF;
+            transform: scale(1.05);
+        }
+        
+        /* Counter Animation */
+        .counter { font-variant-numeric: tabular-nums; }
+        
+        /* Particle background */
+        .particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #0057FF;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+        
+        /* Form Styles */
+        .form-input {
+            transition: all 0.3s ease;
+        }
+        .form-input:focus {
+            border-color: #0057FF;
+            box-shadow: 0 0 0 3px rgba(0, 87, 255, 0.1);
+        }
+        .form-input.error {
+            border-color: #ef4444;
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+        }
+        .form-input.success {
+            border-color: #10b981;
+        }
+        
+        /* WhatsApp Button Pulse */
+        .whatsapp-btn {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        /* Dark Mode Transitions */
+        .dark body { transition: background-color 0.3s ease; }
+        
+        /* Service card icon animation */
+        .service-icon {
+            transition: all 0.4s ease;
+        }
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        /* Navbar scroll effect */
+        .navbar-scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .dark .navbar-scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Stats Counter */
+        .stat-item {
+            position: relative;
+        }
+        .stat-item::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 40px;
+            background: rgba(0, 87, 255, 0.2);
+        }
+        .stat-item:last-child::after { display: none; }
+        
+        /* Typing effect */
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1em;
+            background: #0057FF;
+            margin-left: 4px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Timeline */
+        .timeline-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #0057FF;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px #0057FF;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            z-index: 9999;
+            transform: translateX(400px);
+            transition: transform 0.4s ease;
+        }
+        .toast.show { transform: translateX(0); }
+
+        /* Active nav link */
+        .nav-link.active { color: #0057FF; }
+        .dark .nav-link.active { color: #00C2FF; }
+    </style>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "UBDigitech",
+        "description": "Premium AI-Driven Digital Growth Agency",
+        "url": "https://ubdigitech.com",
+        "founder": {
+            "@type": "Person",
+            "name": "Deewakar Kumar"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+919305829860",
+            "contactType": "sales"
+        },
+        "address": [
+            {
+                "@type": "PostalAddress",
+                "addressLocality": "Lucknow",
+                "addressRegion": "Uttar Pradesh",
+                "addressCountry": "IN"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressLocality": "Noida",
+                "addressRegion": "Uttar Pradesh",
+                "addressCountry": "IN"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body class="bg-light-bg dark:bg-dark-bg text-navy dark:text-white transition-colors duration-300">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 flex-shrink-0">
+                    <div class="relative">
+                        <svg width="48" height="48" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0057FF"/>
+                                    <stop offset="100%" style="stop-color:#00C2FF"/>
+                                </linearGradient>
+                            </defs>
+                            <text x="15" y="72" font-family="Space Grotesk, sans-serif" font-weight="800" font-size="52" fill="url(#logoGrad)">UB</text>
+                            <rect x="60" y="25" width="8" height="8" rx="1" fill="#00C2FF" opacity="0.8"/>
+                            <rect x="72" y="18" width="6" height="6" rx="1" fill="#0057FF" opacity="0.6"/>
+                            <rect x="84" y="12" width="5" height="5" rx="1" fill="#0057FF" opacity="0.4"/>
+                            <rect x="65" y="35" width="5" height="5" rx="1" fill="#00C2FF" opacity="0.7"/>
+                            <rect x="78" y="30" width="4" height="4" rx="1" fill="#00C2FF" opacity="0.5"/>
+                            <rect x="72" y="42" width="6" height="6" rx="1" fill="#0057FF" opacity="0.8"/>
+                            <rect x="85" y="25" width="4" height="4" rx="1" fill="#00C2FF" opacity="0.6"/>
+                            <rect x="90" y="35" width="3" height="3" rx="1" fill="#0057FF" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-space font-bold text-2xl" style="color: #0057FF;">UB</span><span class="font-space font-bold text-2xl text-navy dark:text-white">DIGITECH</span>
+                        <div class="text-[10px] tracking-[3px] text-gray-500 dark:text-gray-400 uppercase -mt-1">Innovate • Digitalize • Elevate</div>
+                    </div>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#home" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">About</a>
+                    <a href="#founder" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">Founder</a>
+                    <a href="#services" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">Services</a>
+                    <a href="#pricing" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">Pricing</a>
+                    <a href="#portfolio" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">Portfolio</a>
+                    <a href="#process" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">Process</a>
+                    <a href="#faq" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">FAQ</a>
+                    <a href="#contact" class="nav-link text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-cyan transition-colors">Contact</a>
+                </div>
+                
+                <!-- Right Actions -->
+                <div class="flex items-center gap-3">
+                    <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-all" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon text-navy dark:text-cyan text-lg dark:hidden"></i>
+                        <i class="fas fa-sun text-cyan dark:text-cyan text-lg hidden dark:inline"></i>
+                    </button>
+                    
+                    <!-- CTA Button -->
+                    <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-primary hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5">
+                        Get Free Consultation
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuToggle" class="lg:hidden w-10 h-10 rounded-full glass flex items-center justify-center" aria-label="Open Menu">
+                        <div class="flex flex-col gap-1.5" id="hamburgerIcon">
+                            <span class="w-5 h-0.5 bg-navy dark:bg-white transition-all duration-300"></span>
+                            <span class="w-5 h-0.5 bg-navy dark:bg-white transition-all duration-300"></span>
+                            <span class="w-3 h-0.5 bg-navy dark:bg-white transition-all duration-300"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden" onclick="closeMobileMenu()"></div>
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 bottom-0 w-80 max-w-full bg-white dark:bg-dark-card z-50 lg:hidden shadow-2xl">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="font-space font-bold text-xl text-navy dark:text-white">Menu</span>
+                <button onclick="closeMobileMenu()" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center" aria-label="Close Menu">
+                    <i class="fas fa-times text-navy dark:text-white"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-1">
+                <a href="#home" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-home w-5 text-center"></i> Home
+                </a>
+                <a href="#about" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-info-circle w-5 text-center"></i> About
+                </a>
+                <a href="#founder" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-user-tie w-5 text-center"></i> Founder
+                </a>
+                <a href="#services" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-cogs w-5 text-center"></i> Services
+                </a>
+                <a href="#pricing" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-tags w-5 text-center"></i> Pricing
+                </a>
+                <a href="#portfolio" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-briefcase w-5 text-center"></i> Portfolio
+                </a>
+                <a href="#process" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-project-diagram w-5 text-center"></i> Process
+                </a>
+                <a href="#faq" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-question-circle w-5 text-center"></i> FAQ
+                </a>
+                <a href="#contact" onclick="closeMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-navy dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-cyan/10 hover:text-primary dark:hover:text-cyan font-medium transition-all">
+                    <i class="fas fa-envelope w-5 text-center"></i> Contact
+                </a>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <a href="#contact" onclick="closeMobileMenu()" class="flex items-center justify-center gap-2 bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-xl text-sm font-semibold transition-all w-full">
+                    Get Free Consultation <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+                <div class="mt-4 flex justify-center gap-4">
+                    <a href="tel:+919305829860" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary dark:text-cyan hover:bg-primary hover:text-white transition-all">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://wa.me/919305829860" class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 hover:bg-green-600 hover:text-white transition-all">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-dark-bg dark:via-[#0d1b3e] dark:to-[#0a1628]"></div>
+        <div class="particles" id="heroParticles"></div>
+        
+        <!-- Animated Shapes -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-cyan/5 rounded-full blur-3xl animate-float" style="animation-delay: -3s;"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-primary/5 rounded-full animate-spin-slow"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-cyan/5 rounded-full animate-spin-slow" style="animation-direction: reverse;"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left">
+                    <div id="heroBadge" class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fadeUp">
+                        <span class="w-2 h-2 bg-primary dark:bg-cyan rounded-full animate-pulse"></span>
+                        AI-Powered Digital Growth Agency
+                    </div>
+                    
+                    <h1 id="heroHeadline" class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-space font-bold leading-tight mb-6 animate-fadeUp" style="animation-delay: 0.1s;">
+                        Future-Proofing<br>
+                        Businesses For<br>
+                        <span class="gradient-text">The AI Era</span>
+                    </h1>
+                    
+                    <p id="heroSubheadline" class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0 animate-fadeUp" style="animation-delay: 0.2s;">
+                        UBDigitech helps businesses grow through Website Development, SEO, GEO, AI Automation, Social Media Marketing, Brand Promotion, and Performance Marketing.
+                    </p>
+                    
+                    <div id="heroCTAs" class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fadeUp" style="animation-delay: 0.3s;">
+                        <a href="#contact" class="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1">
+                            Get Free Consultation
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#services" class="group inline-flex items-center justify-center gap-3 glass text-navy dark:text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/80 dark:hover:bg-gray-800/80 transition-all hover:-translate-y-1">
+                            <i class="fas fa-play-circle text-primary dark:text-cyan"></i>
+                            View Services
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Badges -->
+                    <div id="heroTrust" class="flex flex-wrap items-center gap-6 mt-10 justify-center lg:justify-start animate-fadeUp" style="animation-delay: 0.4s;">
+                        <div class="flex items-center gap-2">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white dark:border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600 border-2 border-white dark:border-dark-bg"></div>
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-navy-400 to-navy-600 border-2 border-white dark:border-dark-bg"></div>
+                            </div>
+                            <span class="text-sm text-gray-600 dark:text-gray-400"><strong class="text-navy dark:text-white">200+</strong> Happy Clients</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                            </div>
+                            <span class="text-sm text-gray-600 dark:text-gray-400 ml-2">4.9/5 Rating</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Dashboard Illustration -->
+                <div class="relative animate-fadeRight hidden lg:block" style="animation-delay: 0.3s;">
+                    <div class="relative">
+                        <!-- Main Dashboard Card -->
+                        <div class="glass rounded-2xl p-6 shadow-2xl">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                                </div>
+                                <span class="text-xs text-gray-500 dark:text-gray-400">Growth Dashboard</span>
+                            </div>
+                            
+                            <!-- Chart Area -->
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 mb-4">
+                                <div class="flex items-end justify-between gap-2 h-32">
+                                    <div class="flex-1 bg-primary/20 rounded-t-lg" style="height: 30%;">
+                                        <div class="bg-primary rounded-t-lg transition-all duration-1000" style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="flex-1 bg-primary/20 rounded-t-lg" style="height: 45%;">
+                                        <div class="bg-primary rounded-t-lg transition-all duration-1000" style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="flex-1 bg-primary/20 rounded-t-lg" style="height: 35%;">
+                                        <div class="bg-primary rounded-t-lg transition-all duration-1000" style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="flex-1 bg-primary/20 rounded-t-lg" style="height: 60%;">
+                                        <div class="bg-primary rounded-t-lg transition-all duration-1000" style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="flex-1 bg-primary/20 rounded-t-lg" style="height: 50%;">
+                                        <div class="bg-primary rounded-t-lg transition-all duration-1000" style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="flex-1 bg-primary/20 rounded-t-lg" style="height: 75%;">
+                                        <div class="bg-primary rounded-t-lg transition-all duration-1000" style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="flex-1 bg-primary/20 rounded-t-lg" style="height: 65%;">
+                                        <div class="bg-primary rounded-t-lg transition-all duration-1000" style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="flex-1 bg-cyan/40 rounded-t-lg relative overflow-hidden" style="height: 95%;">
+                                        <div class="bg-gradient-to-t from-primary to-cyan rounded-t-lg transition-all duration-1000" style="height: 100%; width: 100%;"></div>
+                                        <span class="absolute top-1 right-1 w-2 h-2 bg-cyan rounded-full animate-ping"></span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between mt-2 text-xs text-gray-400">
+                                    <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Stats Row -->
+                            <div class="grid grid-cols-3 gap-3">
+                                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-3 text-center">
+                                    <div class="text-lg font-bold text-primary dark:text-cyan">+247%</div>
+                                    <div class="text-xs text-gray-500">Traffic</div>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-3 text-center">
+                                    <div class="text-lg font-bold text-green-500">+189%</div>
+                                    <div class="text-xs text-gray-500">Leads</div>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-3 text-center">
+                                    <div class="text-lg font-bold text-orange-500">+312%</div>
+                                    <div class="text-xs text-gray-500">Revenue</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Cards -->
+                        <div class="absolute -top-6 -right-6 glass rounded-xl p-4 shadow-lg animate-float" style="animation-delay: -2s;">
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-arrow-trend-up text-green-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500">Conversion Rate</div>
+                                    <div class="text-sm font-bold text-green-600">+45%</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -bottom-4 -left-8 glass rounded-xl p-4 shadow-lg animate-float" style="animation-delay: -4s;">
+                            <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-robot text-primary text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500">AI Tasks</div>
+                                    <div class="text-sm font-bold text-primary dark:text-cyan">Automated</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-1/2 -right-12 glass rounded-xl p-3 shadow-lg animate-float" style="animation-delay: -1s;">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-bolt text-yellow-500"></i>
+                                <span class="text-xs font-semibold">AI Powered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <a href="#about" class="flex flex-col items-center gap-2 text-gray-400 hover:text-primary transition-colors">
+                <span class="text-xs">Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 lg:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Visual -->
+                <div class="relative scroll-animate-left">
+                    <div class="relative">
+                        <div class="glass rounded-2xl p-8 shadow-xl">
+                            <div class="aspect-square bg-gradient-to-br from-primary/10 to-cyan/10 rounded-xl flex items-center justify-center relative overflow-hidden">
+                                <!-- Animated AI Illustration -->
+                                <svg viewBox="0 0 200 200" class="w-3/4 h-3/4">
+                                    <circle cx="100" cy="100" r="80" fill="none" stroke="#0057FF" stroke-width="1" opacity="0.2" class="animate-spin-slow" style="transform-origin: center;"/>
+                                    <circle cx="100" cy="100" r="60" fill="none" stroke="#00C2FF" stroke-width="1" opacity="0.3" class="animate-spin-slow" style="transform-origin: center; animation-direction: reverse;"/>
+                                    <circle cx="100" cy="100" r="40" fill="none" stroke="#0057FF" stroke-width="1" opacity="0.4"/>
+                                    <!-- Central AI Icon -->
+                                    <text x="100" y="108" font-size="40" text-anchor="middle" fill="#0057FF" font-weight="bold" text-anchor="middle">🤖</text>
+                                    <!-- Orbiting dots -->
+                                    <circle cx="100" cy="20" r="5" fill="#00C2FF" class="animate-spin-slow" style="transform-origin: 100px 100px;"/>
+                                    <circle cx="180" cy="100" r="4" fill="#0057FF" class="animate-spin-slow" style="transform-origin: 100px 100px; animation-direction: reverse; animation-duration: 15s;"/>
+                                    <circle cx="100" cy="180" r="6" fill="#00C2FF" class="animate-spin-slow" style="transform-origin: 100px 100px; animation-duration: 25s;"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -right-6 bg-primary text-white rounded-2xl p-6 shadow-xl">
+                            <div class="text-3xl font-bold counter" data-target="5">0</div>
+                            <div class="text-sm opacity-80">Years of<br>Excellence</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Content -->
+                <div class="scroll-animate-right">
+                    <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                        <i class="fas fa-info-circle"></i> About UBDigitech
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-6">
+                        Your <span class="gradient-text">AI-Powered</span><br>Digital Growth Partner
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-lg mb-8 leading-relaxed">
+                        UBDigitech is a modern digital growth agency helping startups, local businesses, and enterprises establish a strong online presence, dominate AI search visibility, automate workflows, and generate high-quality leads through innovative digital solutions.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                        <div class="glass rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold gradient-text counter" data-target="200" data-suffix="+">0</div>
+                            <div class="text-xs text-gray-500 mt-1">Clients Served</div>
+                        </div>
+                        <div class="glass rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold gradient-text counter" data-target="500" data-suffix="+">0</div>
+                            <div class="text-xs text-gray-500 mt-1">Projects Done</div>
+                        </div>
+                        <div class="glass rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold gradient-text counter" data-target="98" data-suffix="%">0</div>
+                            <div class="text-xs text-gray-500 mt-1">Satisfaction</div>
+                        </div>
+                        <div class="glass rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold gradient-text counter" data-target="24" data-suffix="/7">0</div>
+                            <div class="text-xs text-gray-500 mt-1">Support</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#services" class="group inline-flex items-center gap-3 text-primary dark:text-cyan font-semibold hover:gap-4 transition-all">
+                        Explore Our Services <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="py-20 lg:py-28 bg-gradient-to-br from-navy to-[#0d2847] text-white relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-60 h-60 bg-cyan/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-user-tie"></i> Meet The Founder
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold">
+                    Meet <span class="text-cyan">Deewakar Kumar</span>
+                </h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Founder Info -->
+                <div class="scroll-animate-left">
+                    <div class="glass dark-glass bg-white/10 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
+                        <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start mb-8">
+                            <!-- Founder Image Placeholder -->
+                            <div class="w-32 h-32 rounded-2xl bg-gradient-to-br from-primary to-cyan flex items-center justify-center flex-shrink-0 shadow-xl">
+                                <div class="text-center">
+                                    <i class="fas fa-user-tie text-4xl text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-space font-bold mb-2">Deewakar Kumar</h3>
+                                <p class="text-cyan text-sm font-medium mb-3">Founder & CEO, UBDigitech</p>
+                                <div class="flex gap-3">
+                                    <a href="https://linkedin.com" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-all">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://twitter.com" target="_blank" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-all">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="tel:+919305829860" class="w-10 h-10 rounded-full bg-white/10 hover:bg-green-500 flex items-center justify-center transition-all">
+                                        <i class="fas fa-phone"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Deewakar Kumar founded UBDigitech with a vision to help businesses embrace digital transformation and AI-driven growth. His mission is to empower brands with innovative marketing, automation, and visibility solutions that create measurable business impact.
+                        </p>
+                        
+                        <!-- Quote -->
+                        <blockquote class="border-l-4 border-cyan pl-6 py-2 mb-6">
+                            <p class="text-xl font-space italic text-cyan">
+                                "The businesses that adopt AI today will lead tomorrow."
+                            </p>
+                            <footer class="text-sm text-gray-400 mt-2">— Deewakar Kumar</footer>
+                        </blockquote>
+                    </div>
+                    
+                    <!-- Timeline -->
+                    <div class="mt-8 relative">
+                        <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/10 -translate-x-1/2"></div>
+                        <div class="space-y-6">
+                            <div class="relative flex items-center gap-4">
+                                <div class="timeline-dot bg-cyan shadow-[0_0_0_3px_#00C2FF]"></div>
+                                <div class="w-1/2 pr-8 text-right">
+                                    <span class="text-xs text-cyan font-medium">2019</span>
+                                    <p class="text-sm text-gray-300">Started freelancing in web design</p>
+                                </div>
+                                <div class="w-1/2"></div>
+                            </div>
+                            <div class="relative flex items-center gap-4">
+                                <div class="timeline-dot"></div>
+                                <div class="w-1/2"></div>
+                                <div class="w-1/2 pl-8">
+                                    <span class="text-xs text-cyan font-medium">2020</span>
+                                    <p class="text-sm text-gray-300">Founded UBDigitech</p>
+                                </div>
+                            </div>
+                            <div class="relative flex items-center gap-4">
+                                <div class="timeline-dot"></div>
+                                <div class="w-1/2 pr-8 text-right">
+                                    <span class="text-xs text-cyan font-medium">2022</span>
+                                    <p class="text-sm text-gray-300">Expanded to AI Automation services</p>
+                                </div>
+                                <div class="w-1/2"></div>
+                            </div>
+                            <div class="relative flex items-center gap-4">
+                                <div class="timeline-dot bg-green-400 shadow-[0_0_0_3px_#4ade80]"></div>
+                                <div class="w-1/2"></div>
+                                <div class="w-1/2 pl-8">
+                                    <span class="text-xs text-green-400 font-medium">2024</span>
+                                    <p class="text-sm text-gray-300">200+ clients served across India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Founder Photo & Achievements -->
+                <div class="scroll-animate-right">
+                    <div class="relative">
+                        <div class="glass dark-glass bg-white/10 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
+                            <div class="text-center mb-8">
+                                <div class="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary to-cyan flex items-center justify-center mb-4 shadow-2xl">
+                                    <i class="fas fa-user text-5xl text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold">Deewakar Kumar</h3>
+                                <p class="text-cyan text-sm">Founder & CEO</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white/5 rounded-xl p-4 text-center border border-white/5">
+                                    <div class="text-2xl font-bold text-cyan mb-1 counter" data-target="500" data-suffix="+">0</div>
+                                    <div class="text-xs text-gray-400">Projects Delivered</div>
+                                </div>
+                                <div class="bg-white/5 rounded-xl p-4 text-center border border-white/5">
+                                    <div class="text-2xl font-bold text-cyan mb-1 counter" data-target="50" data-suffix="+">0</div>
+                                    <div class="text-xs text-gray-400">AI Automations</div>
+                                </div>
+                                <div class="bg-white/5 rounded-xl p-4 text-center border border-white/5">
+                                    <div class="text-2xl font-bold text-cyan mb-1 counter" data-target="2" data-suffix="">0</div>
+                                    <div class="text-xs text-gray-400">Office Locations</div>
+                                </div>
+                                <div class="bg-white/5 rounded-xl p-4 text-center border border-white/5">
+                                    <div class="text-2xl font-bold text-cyan mb-1 counter" data-target="5" data-suffix="">0</div>
+                                    <div class="text-xs text-gray-400">Years in Industry</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 lg:py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-cogs"></i> Our Services
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-4">
+                    Complete <span class="gradient-text">Digital Solutions</span>
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+                    From web development to AI automation, we provide end-to-end digital growth services
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="card-hover service-card glass dark:bg-dark-card rounded-2xl p-6 border border-gray-100 dark:border-gray-800 scroll-animate" style="transition-delay: 0.05s;">
+                    <div class="service-icon w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-primary dark:text-cyan"></i>
+                    </div>
+                    <h3 class="font-space font-bold text-lg mb-2">Website Design & Development</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Custom, responsive websites built for performance and conversion.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-primary dark:text-cyan font-bold text-lg">₹7,999<small class="text-xs text-gray-500 font-normal"> onwards</small></span>
+                        <a href="#contact" class="text-primary dark:text-cyan hover:opacity-80 transition-opacity">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="card-hover service-card glass dark:bg-dark-card rounded-2xl p-6 border border-gray-100 dark:border-gray-800 scroll-animate" style="transition-delay: 0.1s;">
+                    <div class="service-icon w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fab fa-instagram text-2xl text-primary dark:text-cyan"></i>
+                    </div>
+                    <h3 class="font-space font-bold text-lg mb-2">Social Media Management</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Strategic content creation, posting, and community engagement.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-primary dark:text-cyan font-bold text-lg">₹4,999<small class="text-xs text-gray-500 font-normal">/mo</small></span>
+                        <a href="#contact" class="text-primary dark:text-cyan hover:opacity-80 transition-opacity">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="card-hover service-card glass dark:bg-dark-card rounded-2xl p-6 border border-gray-100 dark:border-gray-800 scroll-animate" style="transition-delay: 0.15s;">
+                    <div class="service-icon w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-search text-2xl text-primary dark:text-cyan"></i>
+                    </div>
+                    <h3 class="font-space font-bold text-lg mb-2">SEO & GEO Services</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Dominate search rankings with cutting-edge SEO & Generative Engine Optimization.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-primary dark:text-cyan font-bold text-lg">₹7,999<small class="text-xs text-gray-500 font-normal">/mo</small></span>
+                        <a href="#contact" class="text-primary dark:text-cyan hover:opacity-80 transition-opacity">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="card-hover service-card glass dark:bg-dark-card rounded-2xl p-6 border border-gray-100 dark:border-gray-800 scroll-animate" style="transition-delay: 0.2s;">
+                    <div class="service-icon w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-2xl text-primary dark:text-cyan"></i>
+                    </div>
+                    <h3 class="font-space font-bold text-lg mb-2">AI Automation Solutions</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Automate workflows, customer service, and data processing with AI.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-primary dark:text-cyan font-bold text-lg">₹7,999<small class="text-xs text-gray-500 font-normal"> onwards</small></span>
+                        <a href="#contact" class="text-primary dark:text-cyan hover:opacity-80 transition-opacity">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="card-hover service-card glass dark:bg-dark-card rounded-2xl p-6 border border-gray-100 dark:border-gray-800 scroll-animate" style="transition-delay: 0.25s;">
+                    <div class="service-icon w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-palette text-2xl text-primary dark:text-cyan"></i>
+                    </div>
+                    <h3 class="font-space font-bold text-lg mb-2">Graphic Designing</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Eye-catching visuals for social media, branding, and marketing collateral.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-primary dark:text-cyan font-bold text-lg">₹4,999<small class="text-xs text-gray-500 font-normal">/mo</small></span>
+                        <a href="#contact" class="text-primary dark:text-cyan hover:opacity-80 transition-opacity">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="card-hover service-card glass dark:bg-dark-card rounded-2xl p-6 border border-gray-100 dark:border-gray-800 scroll-animate" style="transition-delay: 0.3s;">
+                    <div class="service-icon w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-bullhorn text-2xl text-primary dark:text-cyan"></i>
+                    </div>
+                    <h3 class="font-space font-bold text-lg mb-2">Brand Promotion</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Strategic brand building to increase visibility and market presence.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-primary dark:text-cyan font-bold text-lg">₹9,999<small class="text-xs text-gray-500 font-normal">/mo</small></span>
+                        <a href="#contact" class="text-primary dark:text-cyan hover:opacity-80 transition-opacity">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="card-hover service-card glass dark:bg-dark-card rounded-2xl p-6 border border-gray-100 dark:border-gray-800 scroll-animate sm:col-span-2 lg:col-span-1" style="transition-delay: 0.35s;">
+                    <div class="service-icon w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fab fa-google text-2xl text-primary dark:text-cyan"></i>
+                    </div>
+                    <h3 class="font-space font-bold text-lg mb-2">Meta & Google Ads</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">High-ROI PPC campaigns across Meta (Facebook/Instagram) and Google Ads.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-primary dark:text-cyan font-bold text-lg">₹6,499<small class="text-xs text-gray-500 font-normal">/mo</small></span>
+                        <a href="#contact" class="text-primary dark:text-cyan hover:opacity-80 transition-opacity">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 lg:py-28 bg-gradient-to-br from-primary/5 to-cyan/5 dark:from-primary/10 dark:to-cyan/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-trophy"></i> Why Choose Us
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-4">
+                    Why <span class="gradient-text">UBDigitech?</span>
+                </h2>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate">
+                    <div class="w-16 h-16 mx-auto bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-indian-rupee-sign text-2xl text-green-600"></i>
+                    </div>
+                    <h4 class="font-space font-bold mb-2">Affordable Pricing</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Premium services at competitive rates for all business sizes.</p>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate" style="transition-delay: 0.1s;">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-2xl text-blue-600"></i>
+                    </div>
+                    <h4 class="font-space font-bold mb-2">AI-Driven Strategies</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Leverage cutting-edge AI for smarter marketing decisions.</p>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate" style="transition-delay: 0.2s;">
+                    <div class="w-16 h-16 mx-auto bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-2xl text-purple-600"></i>
+                    </div>
+                    <h4 class="font-space font-bold mb-2">Fast Delivery</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Quick turnaround times without compromising quality.</p>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate" style="transition-delay: 0.3s;">
+                    <div class="w-16 h-16 mx-auto bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-2xl text-orange-600"></i>
+                    </div>
+                    <h4 class="font-space font-bold mb-2">Dedicated Support</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">24/7 support with a dedicated account manager for you.</p>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate" style="transition-delay: 0.1s;">
+                    <div class="w-16 h-16 mx-auto bg-cyan-100 dark:bg-cyan-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-2xl text-cyan-600"></i>
+                    </div>
+                    <h4 class="font-space font-bold mb-2">Mobile Responsive</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">All solutions fully responsive across every device.</p>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate" style="transition-delay: 0.2s;">
+                    <div class="w-16 h-16 mx-auto bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-layer-group text-2xl text-indigo-600"></i>
+                    </div>
+                    <h4 class="font-space font-bold mb-2">Complete Solutions</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">End-to-end digital services under one roof.</p>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate" style="transition-delay: 0.3s;">
+                    <div class="w-16 h-16 mx-auto bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-2xl text-red-600"></i>
+                    </div>
+                    <h4 class="font-space font-bold mb-2">Performance Focused</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Data-driven execution for maximum ROI.</p>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate" style="transition-delay: 0.4s;">
+                    <div class="w-16 h-16 mx-auto bg-teal-100 dark:bg-teal-900/30 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-rocket text-2xl text-teal-600"></i>
+                    </div>
+                    <h4 class="font-space font-bold mb-2">Future Ready</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Stay ahead with AI-first growth systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-tags"></i> Pricing Plans
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-4">
+                    Transparent <span class="gradient-text">Pricing</span>
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">Choose the plan that fits your business needs and budget</p>
+            </div>
+            
+            <!-- Pricing Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12 scroll-animate">
+                <button onclick="switchPricing('webdev')" class="pricing-tab active px-6 py-3 rounded-full text-sm font-semibold transition-all bg-primary text-white" data-tab="webdev">Website Dev</button>
+                <button onclick="switchPricing('social')" class="pricing-tab px-6 py-3 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-tab="social">Social Media</button>
+                <button onclick="switchPricing('seo')" class="pricing-tab px-6 py-3 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-tab="seo">SEO & GEO</button>
+                <button onclick="switchPricing('ai')" class="pricing-tab px-6 py-3 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-tab="ai">AI Automation</button>
+                <button onclick="switchPricing('ads')" class="pricing-tab px-6 py-3 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-tab="ads">Meta & Google Ads</button>
+            </div>
+            
+            <!-- Pricing Content -->
+            <div id="pricingContent" class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Dynamically filled -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 lg:py-28 bg-gradient-to-br from-navy/5 to-primary/5 dark:from-navy/20 dark:to-primary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-briefcase"></i> Our Portfolio
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-4">
+                    Our <span class="gradient-text">Work Speaks</span>
+                </h2>
+            </div>
+            
+            <!-- Portfolio Filters -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12 scroll-animate">
+                <button onclick="filterPortfolio('all')" class="portfolio-filter active px-5 py-2 rounded-full text-sm font-semibold transition-all bg-primary text-white" data-filter="all">All</button>
+                <button onclick="filterPortfolio('websites')" class="portfolio-filter px-5 py-2 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-filter="websites">Websites</button>
+                <button onclick="filterPortfolio('social')" class="portfolio-filter px-5 py-2 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-filter="social">Social Media</button>
+                <button onclick="filterPortfolio('branding')" class="portfolio-filter px-5 py-2 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-filter="branding">Branding</button>
+                <button onclick="filterPortfolio('marketing')" class="portfolio-filter px-5 py-2 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-filter="marketing">Marketing</button>
+                <button onclick="filterPortfolio('ai')" class="portfolio-filter px-5 py-2 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-filter="ai">AI Projects</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div id="portfolioGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Portfolio items populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-quote-left"></i> Testimonials
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-4">
+                    What Our <span class="gradient-text">Clients Say</span>
+                </h2>
+            </div>
+            
+            <!-- Testimonial Carousel -->
+            <div class="relative max-w-4xl mx-auto scroll-animate">
+                <div class="overflow-hidden rounded-2xl">
+                    <div id="testimonialTrack" class="testimonial-track">
+                        <!-- Testimonials populated by JS -->
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="flex items-center justify-center gap-4 mt-8">
+                    <button onclick="prevTestimonial()" class="w-12 h-12 rounded-full glass border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div id="testimonialDots" class="flex gap-2">
+                        <!-- Dots populated by JS -->
+                    </div>
+                    <button onclick="nextTestimonial()" class="w-12 h-12 rounded-full glass border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:bg-primary hover:text-white transition-all" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 lg:py-28 bg-gradient-to-br from-primary/5 to-cyan/5 dark:from-primary/10 dark:to-cyan/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-project-diagram"></i> Our Process
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-4">
+                    Our <span class="gradient-text">Working Process</span>
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">A systematic approach to delivering exceptional results</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-6 relative">
+                <!-- Process Steps -->
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate relative">
+                    <div class="w-12 h-12 mx-auto bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 relative z-10">1</div>
+                    <h4 class="font-space font-bold text-sm mb-2">Discovery Call</h4>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Understanding your goals and requirements</p>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30"></div>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate relative" style="transition-delay: 0.1s;">
+                    <div class="w-12 h-12 mx-auto bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 relative z-10">2</div>
+                    <h4 class="font-space font-bold text-sm mb-2">Requirement Analysis</h4>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Deep dive into project specifics</p>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30"></div>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate relative" style="transition-delay: 0.2s;">
+                    <div class="w-12 h-12 mx-auto bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 relative z-10">3</div>
+                    <h4 class="font-space font-bold text-sm mb-2">Strategy Planning</h4>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Creating a detailed action plan</p>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30"></div>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate relative" style="transition-delay: 0.3s;">
+                    <div class="w-12 h-12 mx-auto bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 relative z-10">4</div>
+                    <h4 class="font-space font-bold text-sm mb-2">Design & Dev</h4>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Building your digital product</p>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30"></div>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate relative" style="transition-delay: 0.4s;">
+                    <div class="w-12 h-12 mx-auto bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 relative z-10">5</div>
+                    <h4 class="font-space font-bold text-sm mb-2">Optimization</h4>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Fine-tuning for best performance</p>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30"></div>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate relative" style="transition-delay: 0.5s;">
+                    <div class="w-12 h-12 mx-auto bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 relative z-10">6</div>
+                    <h4 class="font-space font-bold text-sm mb-2">Launch</h4>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Go live with your new project</p>
+                    <div class="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30"></div>
+                </div>
+                
+                <div class="glass dark:bg-dark-card rounded-2xl p-6 text-center card-hover scroll-animate relative" style="transition-delay: 0.6s;">
+                    <div class="w-12 h-12 mx-auto bg-cyan text-navy rounded-full flex items-center justify-center font-bold text-lg mb-4 relative z-10">7</div>
+                    <h4 class="font-space font-bold text-sm mb-2">Ongoing Support</h4>
+                    <p class="text-xs text-gray-600 dark:text-gray-400">Continuous improvement & maintenance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 lg:py-28">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-question-circle"></i> FAQ
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-4">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+            </div>
+            
+            <div class="space-y-4 scroll-animate" id="faqContainer">
+                <!-- FAQ items populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 lg:py-28 bg-gradient-to-br from-primary/5 to-cyan/5 dark:from-primary/10 dark:to-cyan/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-cyan/10 text-primary dark:text-cyan px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-space font-bold mb-4">
+                    Let's <span class="gradient-text">Grow Your Business</span> Together
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">Ready to take your business to the next level? Get your free consultation today.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="lg:col-span-3 scroll-animate-left">
+                    <form id="contactForm" class="glass dark:bg-dark-card rounded-2xl p-8 shadow-xl" onsubmit="handleFormSubmit(event)">
+                        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Full Name *</label>
+                                <input type="text" name="name" required placeholder="Your full name" class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-bg text-navy dark:text-white placeholder-gray-400 focus:outline-none">
+                                <span class="error-msg text-xs text-red-500 mt-1 hidden"></span>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Phone Number *</label>
+                                <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX" class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-bg text-navy dark:text-white placeholder-gray-400 focus:outline-none">
+                                <span class="error-msg text-xs text-red-500 mt-1 hidden"></span>
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email Address *</label>
+                                <input type="email" name="email" required placeholder="your@email.com" class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-bg text-navy dark:text-white placeholder-gray-400 focus:outline-none">
+                                <span class="error-msg text-xs text-red-500 mt-1 hidden"></span>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Business Name</label>
+                                <input type="text" name="business" placeholder="Your business name" class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-bg text-navy dark:text-white placeholder-gray-400 focus:outline-none">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold mb-2">Service Required *</label>
+                            <select name="service" required class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-bg text-navy dark:text-white focus:outline-none">
+                                <option value="">Select a service</option>
+                                <option value="website">Website Design & Development</option>
+                                <option value="social-media">Social Media Optimization & Management</option>
+                                <option value="seo-geo">SEO & GEO Services</option>
+                                <option value="ai-automation">AI Automation Solutions</option>
+                                <option value="graphic-design">Graphic Designing</option>
+                                <option value="brand-promotion">Brand Promotion</option>
+                                <option value="ads">Meta & Google Ads</option>
+                                <option value="all-services">All Services (Full Package)</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea name="message" rows="4" placeholder="Tell us about your project..." class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-bg text-navy dark:text-white placeholder-gray-400 focus:outline-none resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i>
+                            Book Free Consultation
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-2 scroll-animate-right">
+                    <div class="space-y-6">
+                        <!-- Phone -->
+                        <div class="glass dark:bg-dark-card rounded-2xl p-6 flex items-center gap-4 card-hover">
+                            <div class="w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-primary dark:text-cyan text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Phone</h4>
+                                <a href="tel:+919305829860" class="text-primary dark:text-cyan hover:opacity-80">+91 9305829860</a>
+                            </div>
+                        </div>
+                        
+                        <!-- WhatsApp -->
+                        <div class="glass dark:bg-dark-card rounded-2xl p-6 flex items-center gap-4 card-hover">
+                            <div class="w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">WhatsApp</h4>
+                                <a href="https://wa.me/919305829860" target="_blank" class="text-green-600 hover:opacity-80">Chat with us</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="glass dark:bg-dark-card rounded-2xl p-6 flex items-center gap-4 card-hover">
+                            <div class="w-14 h-14 bg-primary/10 dark:bg-cyan/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-primary dark:text-cyan text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Email</h4>
+                                <a href="mailto:info@ubdigitech.com" class="text-primary dark:text-cyan hover:opacity-80">info@ubdigitech.com</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Locations -->
+                        <div class="glass dark:bg-dark-card rounded-2xl p-6">
+                            <h4 class="font-semibold mb-4 flex items-center gap-2">
+                                <i class="fas fa-map-marker-alt text-primary dark:text-cyan"></i> Locations
+                            </h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-building text-gray-400 mt-1"></i>
+                                    <div>
+                                        <span class="font-medium block">Lucknow Office</span>
+                                        <span class="text-sm text-gray-500">Lucknow, Uttar Pradesh, India</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-building text-gray-400 mt-1"></i>
+                                    <div>
+                                        <span class="font-medium block">Noida Office</span>
+                                        <span class="text-sm text-gray-500">Noida, Uttar Pradesh, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="glass dark:bg-dark-card rounded-2xl p-6">
+                            <h4 class="font-semibold mb-4">Follow Us</h4>
+                            <div class="flex gap-3">
+                                <a href="#" class="w-10 h-10 rounded-xl bg-primary/10 hover:bg-primary hover:text-white flex items-center justify-center text-primary transition-all">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-xl bg-primary/10 hover:bg-primary hover:text-white flex items-center justify-center text-primary transition-all">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-xl bg-primary/10 hover:bg-primary hover:text-white flex items-center justify-center text-primary transition-all">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-xl bg-primary/10 hover:bg-primary hover:text-white flex items-center justify-center text-primary transition-all">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-xl bg-primary/10 hover:bg-primary hover:text-white flex items-center justify-center text-primary transition-all">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy dark:bg-[#060b18] text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Logo & About -->
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <a href="#home" class="inline-flex items-center gap-2 mb-4">
+                        <span class="font-space font-bold text-2xl text-cyan">UB</span><span class="font-space font-bold text-2xl">DIGITECH</span>
+                    </a>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        A modern digital growth agency helping businesses innovate, digitalize, and elevate through AI-powered solutions.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary flex items-center justify-center transition-all">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary flex items-center justify-center transition-all">
+                            <i class="fab fa-instagram text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary flex items-center justify-center transition-all">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary flex items-center justify-center transition-all">
+                            <i class="fab fa-twitter text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 hover:bg-green-500 flex items-center justify-center transition-all">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan text-sm transition-colors">Website Development</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan text-sm transition-colors">Social Media Mgmt</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan text-sm transition-colors">SEO & GEO Services</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan text-sm transition-colors">AI Automation</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan text-sm transition-colors">Graphic Designing</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan text-sm transition-colors">Meta & Google Ads</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-cyan text-sm transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-cyan text-sm transition-colors">About Us</a></li>
+                        <li><a href="#founder" class="text-gray-400 hover:text-cyan text-sm transition-colors">Founder</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-cyan text-sm transition-colors">Pricing</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-cyan text-sm transition-colors">Portfolio</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-cyan text-sm transition-colors">FAQ</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-cyan text-sm transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-6">Contact Info</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-phone text-cyan mt-1 text-sm"></i>
+                            <div>
+                                <span class="text-sm text-gray-400">Phone</span>
+                                <p><a href="tel:+919305829860" class="text-white hover:text-cyan text-sm transition-colors">+91 9305829860</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-cyan mt-1 text-sm"></i>
+                            <div>
+                                <span class="text-sm text-gray-400">Email</span>
+                                <p><a href="mailto:info@ubdigitech.com" class="text-white hover:text-cyan text-sm transition-colors">info@ubdigitech.com</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-cyan mt-1 text-sm"></i>
+                            <div>
+                                <span class="text-sm text-gray-400">Offices</span>
+                                <p class="text-white text-sm">Lucknow, UP</p>
+                                <p class="text-white text-sm">Noida, UP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom -->
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-sm text-gray-400">
+                    © 2026 UBDigitech. All Rights Reserved.
+                </p>
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-cyan transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-cyan transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919305829860?text=Hello%20UBDigitech%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" 
+       class="whatsapp-btn fixed bottom-6 right-6 z-50 w-16 h-16 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-xl transition-all hover:scale-110"
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" 
+        class="fixed bottom-6 left-6 z-50 w-12 h-12 bg-primary hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all opacity-0 invisible"
+        aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-xl"></i>
+            <div>
+                <div class="font-semibold">Message Sent Successfully!</div>
+                <div class="text-sm opacity-90">We'll get back to you within 24 hours.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // ====== DATA ======
+        const pricingData = {
+            webdev: {
+                title: 'Website Development',
+                plans: [
+                    { name: 'Basic', price: '7,999', features: ['Up to 5 Pages', 'Responsive Design', 'Basic SEO Setup', 'Contact Form', '2 Rounds of Revision'], featured: false },
+                    { name: 'Standard', price: '19,999', features: ['Up to 15 Pages', 'Advanced UI/UX Design', 'Advanced SEO Setup', 'CMS Integration', 'Speed Optimization', '5 Rounds of Revision'], featured: true },
+                    { name: 'Premium', price: '39,999', features: ['Unlimited Pages', 'Custom Design', 'Full SEO Optimization', 'E-commerce Ready', 'Performance Dashboard', '1 Year Free Support', 'Priority Support'], featured: false }
+                ]
+            },
+            social: {
+                title: 'Social Media Management',
+                plans: [
+                    { name: 'Basic', price: '4,999', features: ['2 Platforms', '12 Posts/Month', 'Basic Design', 'Monthly Report', 'Comment Management'], featured: false },
+                    { name: 'Standard', price: '8,999', features: ['3 Platforms', '20 Posts/Month', 'Premium Design', 'Weekly Reports', 'Story & Reel Content', 'Engagement Management'], featured: true },
+                    { name: 'Premium', price: '14,999', features: ['All Platforms', '30 Posts/Month', 'Advanced Graphics', 'Daily Reports', 'Video Content', 'Strategy Consultation', 'Paid Ad Management'], featured: false }
+                ]
+            },
+            seo: {
+                title: 'SEO & GEO Services',
+                plans: [
+                    { name: 'Basic', price: '7,999', features: ['15 Keywords', 'On-Page SEO', 'Google My Business', 'Technical Audit', 'Monthly Report'], featured: false },
+                    { name: 'Standard', price: '14,999', features: ['30 Keywords', 'On-Page + Off-Page', 'AI Content Optimization', 'Geo-Optimization', 'Weekly Reports', 'Competitor Analysis'], featured: true },
+                    { name: 'Premium', price: '24,999', features: ['50+ Keywords', 'Full SEO Campaign', 'AI Visibility Optimization', 'Schema Markup', 'Daily Reports', 'Content Strategy', 'GEO Rankings'], featured: false }
+                ]
+            },
+            ai: {
+                title: 'AI Automation',
+                plans: [
+                    { name: 'Basic', price: '7,999', features: ['1 Workflow Automation', 'Chatbot Setup', 'Email Automation', 'Basic Integration', 'Onboarding Support'], featured: false },
+                    { name: 'Standard', price: '14,999', features: ['3 Workflow Automations', 'Advanced Chatbot', 'Multi-channel Setup', 'API Integrations', 'Monthly Optimization'], featured: true },
+                    { name: 'Premium', price: '29,999', features: ['Unlimited Workflows', 'Custom AI Solutions', 'Full Stack Automation', 'Advanced Analytics', 'Ongoing Training', '24/7 Support'], featured: false }
+                ]
+            },
+            ads: {
+                title: 'Meta & Google Ads',
+                plans: [
+                    { name: 'Basic', price: '6,499', features: ['1 Platform', 'Basic Campaign Setup', 'Audience Research', 'Weekly Optimization', 'Monthly Report'], featured: false },
+                    { name: 'Standard', price: '12,999', features: ['Both Platforms', 'Advanced Campaigns', 'A/B Testing', 'Retargeting Setup', 'Weekly Reports', 'Conversion Tracking'], featured: true },
+                    { name: 'Premium', price: '22,999', features: ['Full Funnel Campaign', 'Max Budget Management', 'Advanced Retargeting', 'Creative Production', 'Daily Reports', 'ROI Guarantee'], featured: false }
+                ]
+            }
+        };
+
+        const portfolioItems = [
+            { title: 'E-Commerce Store', category: 'websites', description: 'Full-featured online store with payment integration', color: 'from-blue-500 to-cyan-500', icon: 'fa-shopping-cart' },
+            { title: 'Restaurant Branding', category: 'branding', description: 'Complete brand identity for a restaurant chain', color: 'from-purple-500 to-pink-500', icon: 'fa-utensils' },
+            { title: 'Social Media Campaign', category: 'social', description: 'Viral campaign reaching 500K+ users', color: 'from-green-500 to-emerald-500', icon: 'fa-hashtag' },
+            { title: 'SaaS Dashboard', category: 'websites', description: 'Analytics dashboard with real-time data', color: 'from-orange-500 to-red-500', icon: 'fa-tachometer-alt' },
+            { title: 'AI Chat Assistant', category: 'ai', description: 'Customer service chatbot with NLP', color: 'from-indigo-500 to-blue-500', icon: 'fa-robot' },
+            { title: 'Google Ads Campaign', category: 'marketing', description: 'Lead generation campaign with 300% ROI', color: 'from-yellow-500 to-orange-500', icon: 'fa-bullhorn' },
+            { title: 'Corporate Branding', category: 'branding', description: 'Brand refresh for a startup company', color: 'from-teal-500 to-green-500', icon: 'fa-paint-brush' },
+            { title: 'Instagram Strategy', category: 'social', description: 'Growth strategy achieving 200% engagement', color: 'from-rose-500 to-purple-500', icon: 'fa-camera' },
+            { title: 'Lead Automation', category: 'ai', description: 'AI-powered lead scoring system', color: 'from-cyan-500 to-blue-500', icon: 'fa-cogs' },
+            { title: 'Portfolio Website', category: 'websites', description: 'Creative portfolio with stunning animations', color: 'from-violet-500 to-indigo-500', icon: 'fa-image' },
+            { title: 'Facebook Ads Funnel', category: 'marketing', description: 'Multi-step ad funnel for e-commerce', color: 'from-sky-500 to-blue-500', icon: 'fa-filter' },
+            { title: 'Content Marketing', category: 'marketing', description: 'SEO content strategy doubling organic traffic', color: 'from-lime-500 to-green-500', icon: 'fa-file-alt' },
+        ];
+
+        const testimonials = [
+            { name: 'Rahul Sharma', business: 'TechVenture Solutions', review: 'UBDigitech transformed our online presence completely. Our website traffic increased by 300% and leads are pouring in. Their AI automation solutions saved us countless hours!', rating: 5, avatar: 'RS' },
+            { name: 'Priya Patel', business: 'GreenLeaf Organics', review: 'The team at UBDigitech is incredibly professional. They designed our e-commerce store beautifully and their SEO work helped us rank on the first page within 3 months. Highly recommended!', rating: 5, avatar: 'PP' },
+            { name: 'Amit Verma', business: 'Metro Logistics', review: 'Their AI automation solutions revolutionized our customer service. Response time dropped by 80% and customer satisfaction soared. The best investment we ever made!', rating: 5, avatar: 'AV' },
+            { name: 'Sneha Gupta', business: 'Bella Fashion', review: 'UBDigitech managed our complete social media and brand promotion. Our Instagram following grew from 2K to 50K in just 6 months. Absolutely incredible results!', rating: 5, avatar: 'SG' },
+            { name: 'Vikram Singh', business: 'CloudNine Software', review: 'From SEO to Google Ads, UBDigitech delivered across every channel. Our monthly revenue increased by 200% thanks to their performance marketing strategies. Outstanding work!', rating: 5, avatar: 'VS' },
+            { name: 'Neha Jain', business: 'EduPro Academy', review: 'The website they built for our academy is stunning. Plus their GEO optimization helped us appear in AI search results. Modern, responsive, and conversion-focused!', rating: 5, avatar: 'NJ' },
+        ];
+
+        const faqData = [
+            { question: 'What is GEO (Generative Engine Optimization)?', answer: 'GEO is a next-generation SEO strategy that optimizes your content for AI-powered search engines like Google Bard, Bing Chat, and other generative AI platforms. It ensures your business content appears in AI-generated answers, giving you visibility in the AI era. Unlike traditional SEO that focuses on ranking on search result pages, GEO focuses on getting your content referenced and featured in AI responses.' },
+            { question: 'How does AI Visibility work?', answer: 'AI Visibility involves optimizing your digital presence so that AI search engines and assistants can easily find, understand, and feature your business in their responses. This includes structured data markup, semantic content optimization, entity optimization, and ensuring your brand information is accurately represented across authoritative sources. AI visibility is crucial as more users turn to AI assistants for recommendations and information.' },
+            { question: 'How long does website development take?', answer: 'The timeline depends on the complexity of the project. A basic website typically takes 1-2 weeks, a standard website with CMS integration takes 2-4 weeks, and a complex e-commerce or custom application can take 4-8 weeks. We provide a detailed timeline during our discovery call so you know exactly what to expect.' },
+            { question: 'What is included in SEO services?', answer: 'Our SEO services include comprehensive technical audit, on-page optimization, keyword research, content strategy, link building, Google My Business optimization, schema markup implementation, competitor analysis, and detailed monthly reporting. We follow white-hat practices and focus on long-term, sustainable ranking improvements.' },
+            { question: 'Do you manage social media?', answer: 'Yes! We offer complete social media management services including content creation, scheduling, community management, engagement tracking, and monthly reporting. We manage all major platforms including Facebook, Instagram, LinkedIn, Twitter, and YouTube. Our AI-powered approach helps us create content that resonates with your target audience.' },
+            { question: 'Can you run Meta & Google Ads?', answer: 'Absolutely. We are certified in both Meta Ads (Facebook & Instagram) and Google Ads. We handle campaign strategy, creative design, audience targeting, bid management, A/B testing, conversion tracking, and detailed ROI reporting. Our ads campaigns are performance-focused with regular optimization to maximize your advertising budget.' },
+            { question: 'Do you provide AI Automation solutions?', answer: 'Yes! We specialize in AI automation solutions including chatbot development, workflow automation, email marketing automation, CRM integration, data processing automation, and custom AI solutions. We help businesses save time, reduce manual work, and improve efficiency through intelligent automation.' },
+            { question: 'Do you offer post-launch support?', answer: 'Yes, we provide comprehensive post-launch support. All our packages include ongoing support. Premium plans include priority support with dedicated account managers. We ensure your digital products continue to perform optimally after launch with regular maintenance, updates, and performance monitoring.' },
+        ];
+
+        // ====== INITIALIZE ======
+        document.addEventListener('DOMContentLoaded', function() {
+            initScrollAnimations();
+            initNavbar();
+            initParticles();
+            initCounters();
+            renderPricing('webdev');
+            renderPortfolio('all');
+            renderTestimonials();
+            renderFAQ();
+            checkDarkMode();
+            initTypingEffect();
+        });
+
+        // ====== SCROLL ANIMATIONS ======
+        function initScrollAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+            document.querySelectorAll('.scroll-animate, .scroll-animate-left, .scroll-animate-right').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // ====== NAVBAR ======
+        function initNavbar() {
+            const navbar = document.getElementById('navbar');
+            const backToTop = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled', 'glass', 'dark:!bg-dark-bg/80');
+                } else {
+                    navbar.classList.remove('navbar-scrolled', 'glass', 'dark:!bg-dark-bg/80');
+                }
+                
+                if (window.scrollY > 500) {
+                    backToTop.classList.remove('opacity-0', 'invisible');
+                    backToTop.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTop.classList.add('opacity-0', 'invisible');
+                    backToTop.classList.remove('opacity-100', 'visible');
+                }
+
+                // Active nav link
+                updateActiveNavLink();
+            });
+        }
+
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPos = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                const id = section.getAttribute('id');
+                
+                if (scrollPos >= top && scrollPos < top + height) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        // ====== MOBILE MENU ======
+        document.getElementById('mobileMenuToggle').addEventListener('click', () => {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileMenuOverlay');
+            menu.classList.toggle('open');
+            overlay.classList.toggle('hidden');
+            document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+        });
+
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileMenuOverlay');
+            menu.classList.remove('open');
+            overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // ====== DARK MODE ======
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+        });
+
+        function checkDarkMode() {
+            const saved = localStorage.getItem('darkMode');
+            if (saved === 'true' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        }
+
+        // ====== PARTICLES ======
+        function initParticles() {
+            const container = document.getElementById('heroParticles');
+            if (!container) return;
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                particle.style.width = (Math.random() * 4 + 2) + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.opacity = Math.random() * 0.3 + 0.1;
+                particle.style.animation = `float ${Math.random() * 10 + 5}s ease-in-out infinite`;
+                container.appendChild(particle);
+            }
+        }
+
+        // ====== COUNTERS ======
+        function initCounters() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        if (el.dataset.counted) return;
+                        el.dataset.counted = 'true';
+                        
+                        const target = parseInt(el.dataset.target);
+                        const suffix = el.dataset.suffix || '';
+                        const duration = 2000;
+                        const startTime = performance.now();
+                        
+                        function update(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            const current = Math.round(eased * target);
+                            el.textContent = current + suffix;
+                            
+                            if (progress < 1) {
+                                requestAnimationFrame(update);
+                            }
+                        }
+                        
+                        requestAnimationFrame(update);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.counter').forEach(el => observer.observe(el));
+        }
+
+        // ====== PRICING ======
+        function renderPricing(category) {
+            const data = pricingData[category];
+            const container = document.getElementById('pricingContent');
+            
+            container.innerHTML = data.plans.map((plan, i) => `
+                <div class="pricing-card glass dark:bg-dark-card rounded-2xl p-8 relative card-hover ${plan.featured ? 'featured' : ''} animate-scaleIn" style="animation-delay: ${i * 0.1}s;">
+                    ${plan.featured ? '<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold">MOST POPULAR</div>' : ''}
+                    <h3 class="font-space font-bold text-xl mb-2">${plan.name}</h3>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold gradient-text">₹${plan.price}</span>
+                        <span class="text-sm text-gray-500">/${category === 'webdev' || category === 'ai' ? 'onwards' : 'month'}</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        ${plan.features.map(f => `
+                            <li class="flex items-center gap-3 text-sm">
+                                <i class="fas fa-check text-green-500 flex-shrink-0"></i>
+                                <span class="text-gray-600 dark:text-gray-400">${f}</span>
+                            </li>
+                        `).join('')}
+                    </ul>
+                    <a href="#contact" class="block w-full text-center ${plan.featured ? 'bg-primary hover:bg-blue-700 text-white' : 'glass border border-primary/30 text-primary dark:text-cyan hover:bg-primary/10'} px-6 py-3 rounded-xl font-semibold transition-all">
+                        Get Started
+                    </a>
+                </div>
+            `).join('');
+
+            // Update active tab
+            document.querySelectorAll('.pricing-tab').forEach(tab => {
+                tab.classList.remove('active', 'bg-primary', 'text-white');
+                tab.classList.add('bg-gray-200', 'dark:bg-dark-card', 'text-gray-600', 'dark:text-gray-400');
+                if (tab.dataset.tab === category) {
+                    tab.classList.add('active', 'bg-primary', 'text-white');
+                    tab.classList.remove('bg-gray-200', 'dark:bg-dark-card', 'text-gray-600', 'dark:text-gray-400');
+                }
+            });
+        }
+
+        function switchPricing(category) {
+            renderPricing(category);
+        }
+
+        // ====== PORTFOLIO ======
+        function renderPortfolio(filter) {
+            const grid = document.getElementById('portfolioGrid');
+            const filtered = filter === 'all' ? portfolioItems : portfolioItems.filter(item => item.category === filter);
+            
+            grid.innerHTML = filtered.map((item, i) => `
+                <div class="portfolio-item aspect-[4/3] cursor-pointer animate-scaleIn" style="animation-delay: ${i * 0.05}s;" data-category="${item.category}">
+                    <div class="absolute inset-0 bg-gradient-to-br ${item.color}"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <i class="fas ${item.icon} text-5xl text-white/40"></i>
+                    </div>
+                    <div class="overlay">
+                        <div class="text-center text-white px-4">
+                            <h4 class="font-space font-bold text-lg mb-2">${item.title}</h4>
+                            <p class="text-sm opacity-90">${item.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            // Update active filter
+            document.querySelectorAll('.portfolio-filter').forEach(btn => {
+                btn.classList.remove('active', 'bg-primary', 'text-white');
+                btn.classList.add('bg-gray-200', 'dark:bg-dark-card', 'text-gray-600', 'dark:text-gray-400');
+                if (btn.dataset.filter === filter) {
+                    btn.classList.add('active', 'bg-primary', 'text-white');
+                    btn.classList.remove('bg-gray-200', 'dark:bg-dark-card', 'text-gray-600', 'dark:text-gray-400');
+                }
+            });
+        }
+
+        function filterPortfolio(category) {
+            renderPortfolio(category);
+        }
+
+        // ====== TESTIMONIALS ======
+        let currentTestimonial = 0;
+        let testimonialInterval;
+
+        function renderTestimonials() {
+            const track = document.getElementById('testimonialTrack');
+            const dots = document.getElementById('testimonialDots');
+            
+            track.innerHTML = testimonials.map(t => `
+                <div class="w-full flex-shrink-0">
+                    <div class="glass dark:bg-dark-card rounded-2xl p-8 mx-auto max-w-2xl">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-cyan flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
+                                ${t.avatar}
+                            </div>
+                            <div>
+                                <h4 class="font-space font-bold">${t.name}</h4>
+                                <p class="text-sm text-gray-500">${t.business}</p>
+                            </div>
+                        </div>
+                        <div class="flex text-yellow-400 mb-4">
+                            ${Array(t.rating).fill('<i class="fas fa-star text-sm"></i>').join('')}
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed italic mb-2">"${t.review}"</p>
+                        <div class="flex items-center gap-1 text-primary dark:text-cyan mt-4">
+                            <i class="fas fa-quote-left text-xs"></i>
+                            <span class="text-xs font-semibold">Verified Client</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            dots.innerHTML = testimonials.map((_, i) => `
+                <button onclick="goToTestimonial(${i})" 
+                    class="w-3 h-3 rounded-full transition-all ${i === 0 ? 'bg-primary w-8' : 'bg-gray-300 dark:bg-gray-600'}"
+                    aria-label="Go to testimonial ${i + 1}">
+                </button>
+            `).join('');
+
+            startTestimonialAutoplay();
+        }
+
+        function updateTestimonial() {
+            const track = document.getElementById('testimonialTrack');
+            track.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+            
+            document.querySelectorAll('#testimonialDots button').forEach((dot, i) => {
+                dot.className = i === currentTestimonial 
+                    ? 'w-8 h-3 rounded-full bg-primary transition-all'
+                    : 'w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-600 transition-all';
+            });
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            updateTestimonial();
+            resetAutoplay();
+        }
+
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            updateTestimonial();
+            resetAutoplay();
+        }
+
+        function goToTestimonial(index) {
+            currentTestimonial = index;
+            updateTestimonial();
+            resetAutoplay();
+        }
+
+        function startTestimonialAutoplay() {
+            testimonialInterval = setInterval(nextTestimonial, 5000);
+        }
+
+        function resetAutoplay() {
+            clearInterval(testimonialInterval);
+            startTestimonialAutoplay();
+        }
+
+        // ====== FAQ ======
+        function renderFAQ() {
+            const container = document.getElementById('faqContainer');
+            container.innerHTML = faqData.map((faq, i) => `
+                <div class="glass dark:bg-dark-card rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800">
+                    <button onclick="toggleFAQ(${i})" class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                        <span class="font-space font-semibold pr-4">${faq.question}</span>
+                        <i id="faqIcon${i}" class="fas fa-plus text-primary dark:text-cyan flex-shrink-0 transition-transform duration-300"></i>
+                    </button>
+                    <div id="faqAnswer${i}" class="faq-answer">
+                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                            ${faq.answer}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function toggleFAQ(index) {
+            const answer = document.getElementById(`faqAnswer${index}`);
+            const icon = document.getElementById(`faqIcon${index}`);
+            
+            // Close all others
+            document.querySelectorAll('.faq-answer').forEach((el, i) => {
+                if (i !== index) {
+                    el.classList.remove('open');
+                    document.getElementById(`faqIcon${i}`).classList.remove('rotate-45');
+                    document.getElementById(`faqIcon${i}`).classList.add('fa-plus');
+                    document.getElementById(`faqIcon${i}`).classList.remove('fa-minus');
+                }
+            });
+            
+            answer.classList.toggle('open');
+            
+            if (answer.classList.contains('open')) {
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            } else {
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            }
+        }
+
+        // ====== FORM HANDLING ======
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Validation
+            let valid = true;
+            const fields = [
+                { name: 'name', validate: v => v.length >= 2 },
+                { name: 'phone', validate: v => /^[\+]?[\d\s-]{10,}$/.test(v) },
+                { name: 'email', validate: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+                { name: 'service', validate: v => v.length > 0 },
+            ];
+            
+            fields.forEach(field => {
+                const input = form.querySelector(`[name="${field.name}"]`);
+                const errorMsg = input.parentElement.querySelector('.error-msg');
+                
+                if (!field.validate(formData.get(field.name))) {
+                    input.classList.add('error');
+                    if (errorMsg) {
+                        errorMsg.textContent = 'Please enter a valid value';
+                        errorMsg.classList.remove('hidden');
+                    }
+                    valid = false;
+                } else {
+                    input.classList.remove('error');
+                    input.classList.add('success');
+                    if (errorMsg) {
+                        errorMsg.classList.add('hidden');
+                    }
+                }
+            });
+            
+            if (valid) {
+                // Show success toast
+                const toast = document.getElementById('toast');
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 4000);
+                
+                form.reset();
+                
+                // Remove success class and open WhatsApp
+                setTimeout(() => {
+                    form.querySelectorAll('.form-input').forEach(el => {
+                        el.classList.remove('success');
+                    });
+                    
+                    // Construct WhatsApp message
+                    const name = formData.get('name');
+                    const service = formData.get('service');
+                    const message = `Hello UBDigitech, I'm ${name}. I'm interested in ${service}. Please contact me.`;
+                    window.open(`https://wa.me/919305829860?text=${encodeURIComponent(message)}`, '_blank');
+                }, 500);
+            }
+            
+            // Remove error/success states after timeout
+            setTimeout(() => {
+                form.querySelectorAll('.form-input').forEach(el => {
+                    el.classList.remove('error', 'success');
+                });
+                form.querySelectorAll('.error-msg').forEach(el => {
+                    el.classList.add('hidden');
+                });
+            }, 3000);
+        }
+
+        // ====== TYPING EFFECT ======
+        function initTypingEffect() {
+            const words = ['The AI Era', 'Digital Growth', 'Business Success', 'Brand Visibility'];
+            const el = document.querySelector('#heroHeadline .gradient-text');
+            if (!el) return;
+            
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            
+            function type() {
+                const currentWord = words[wordIndex];
+                
+                if (isDeleting) {
+                    el.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    el.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+                
+                if (!isDeleting && charIndex === currentWord.length) {
+                    setTimeout(() => { isDeleting = true; type(); }, 2000);
+                    return;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    setTimeout(type, 500);
+                    return;
+                }
+                
+                const speed = isDeleting ? 50 : 100;
+                setTimeout(type, speed);
+            }
+            
+            setTimeout(type, 2000);
+        }
+
+        // ====== SMOOTH SCROLL FIX for navbar offset ======
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const top = target.offsetTop - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ====== TOUCH SWIPE FOR TESTIMONIALS ======
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const testimonialEl = document.querySelector('#testimonialTrack')?.parentElement;
+        
+        if (testimonialEl) {
+            testimonialEl.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, false);
+            testimonialEl.addEventListener('touchend', e => { 
+                touchEndX = e.changedTouches[0].screenX;
+                if (touchStartX - touchEndX > 50) nextTestimonial();
+                if (touchEndX - touchStartX > 50) prevTestimonial();
+            }, false);
+        }
+    </script>
+</body>
+</html>
