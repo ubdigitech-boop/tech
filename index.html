@@ -1965,7 +1965,13 @@
                 icon.classList.add('fa-plus');
             }
         }    
-            // Validation
+// ====== FORM HANDLING ======
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form); 
+            
+        // Validation
             let valid = true;
             const fields = [
                 { name: 'name', validate: v => v.length >= 2 },
