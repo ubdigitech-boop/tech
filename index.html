@@ -376,10 +376,28 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <a href="#home" class="flex items-center gap-3 flex-shrink-0">
-    <img src="ub-logo.png" alt="UB Digitech" class="h-16 w-auto">
-    <div>
+                    <div class="relative">
+                        <svg width="48" height="48" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0057FF"/>
+                                    <stop offset="100%" style="stop-color:#00C2FF"/>
+                                </linearGradient>
+                            </defs>
+                            <text x="15" y="72" font-family="Space Grotesk, sans-serif" font-weight="800" font-size="52" fill="url(#logoGrad)">UB</text>
+                            <rect x="60" y="25" width="8" height="8" rx="1" fill="#00C2FF" opacity="0.8"/>
+                            <rect x="72" y="18" width="6" height="6" rx="1" fill="#0057FF" opacity="0.6"/>
+                            <rect x="84" y="12" width="5" height="5" rx="1" fill="#0057FF" opacity="0.4"/>
+                            <rect x="65" y="35" width="5" height="5" rx="1" fill="#00C2FF" opacity="0.7"/>
+                            <rect x="78" y="30" width="4" height="4" rx="1" fill="#00C2FF" opacity="0.5"/>
+                            <rect x="72" y="42" width="6" height="6" rx="1" fill="#0057FF" opacity="0.8"/>
+                            <rect x="85" y="25" width="4" height="4" rx="1" fill="#00C2FF" opacity="0.6"/>
+                            <rect x="90" y="35" width="3" height="3" rx="1" fill="#0057FF" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div>
                         <span class="font-space font-bold text-2xl" style="color: #0057FF;">UB</span><span class="font-space font-bold text-2xl text-navy dark:text-white">DIGITECH</span>
-                        <div class="hidden sm:block text-[10px] tracking-[3px] text-gray-500 dark:text-gray-400 uppercase -mt-1">Innovate • Digitalize • Elevate</div>
+                        <div class="text-[10px] tracking-[3px] text-gray-500 dark:text-gray-400 uppercase -mt-1">Innovate • Digitalize • Elevate</div>
                     </div>
                 </a>
                 
@@ -499,7 +517,7 @@
                         AI-Powered Digital Growth Agency
                     </div>
                     
-                    <h1 id="heroHeadline" class="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-space font-bold leading-tight mb-6 animate-fadeUp" style="animation-delay: 0.1s;">
+                    <h1 id="heroHeadline" class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-space font-bold leading-tight mb-6 animate-fadeUp" style="animation-delay: 0.1s;">
                         Future-Proofing<br>
                         Businesses For<br>
                         <span class="gradient-text">The AI Era</span>
@@ -784,36 +802,36 @@
                     
                     <!-- Timeline -->
                     <div class="mt-8 relative">
-                        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/10 -translate-x-1/2"></div>
+                        <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/10 -translate-x-1/2"></div>
                         <div class="space-y-6">
-                            <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4">
+                            <div class="relative flex items-center gap-4">
                                 <div class="timeline-dot bg-cyan shadow-[0_0_0_3px_#00C2FF]"></div>
-                                <div class="w-full md:w-1/2 md:pr-8 md:text-right">
+                                <div class="w-1/2 pr-8 text-right">
                                     <span class="text-xs text-cyan font-medium">2019</span>
                                     <p class="text-sm text-gray-300">Started freelancing in web design</p>
                                 </div>
                                 <div class="w-1/2"></div>
                             </div>
-                            <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4">
+                            <div class="relative flex items-center gap-4">
                                 <div class="timeline-dot"></div>
                                 <div class="w-1/2"></div>
-                                <div class="w-full md:w-1/2 md:pl-8">
+                                <div class="w-1/2 pl-8">
                                     <span class="text-xs text-cyan font-medium">2020</span>
                                     <p class="text-sm text-gray-300">Founded UBDigitech</p>
                                 </div>
                             </div>
-                            <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4">
+                            <div class="relative flex items-center gap-4">
                                 <div class="timeline-dot"></div>
-                                <div class="w-full md:w-1/2 md:pr-8 md:text-right">
+                                <div class="w-1/2 pr-8 text-right">
                                     <span class="text-xs text-cyan font-medium">2022</span>
                                     <p class="text-sm text-gray-300">Expanded to AI Automation services</p>
                                 </div>
                                 <div class="w-1/2"></div>
                             </div>
-                            <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4">
+                            <div class="relative flex items-center gap-4">
                                 <div class="timeline-dot bg-green-400 shadow-[0_0_0_3px_#4ade80]"></div>
                                 <div class="w-1/2"></div>
-                                <div class="w-full md:w-1/2 md:pl-8">
+                                <div class="w-1/2 pl-8">
                                     <span class="text-xs text-green-400 font-medium">2024</span>
                                     <p class="text-sm text-gray-300">200+ clients served across India</p>
                                 </div>
@@ -1077,7 +1095,7 @@
             </div>
             
             <!-- Pricing Tabs -->
-            <div class="flex overflow-x-auto whitespace-nowrap gap-3 mb-12 pb-2 scrollbar-hide">
+            <div class="flex flex-wrap justify-center gap-3 mb-12 scroll-animate">
                 <button onclick="switchPricing('webdev')" class="pricing-tab active px-6 py-3 rounded-full text-sm font-semibold transition-all bg-primary text-white" data-tab="webdev">Website Dev</button>
                 <button onclick="switchPricing('social')" class="pricing-tab px-6 py-3 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-tab="social">Social Media</button>
                 <button onclick="switchPricing('seo')" class="pricing-tab px-6 py-3 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-tab="seo">SEO & GEO</button>
@@ -1105,7 +1123,7 @@
             </div>
             
             <!-- Portfolio Filters -->
-            <div class="flex overflow-x-auto whitespace-nowrap gap-3 mb-12 pb-2 scrollbar-hide">
+            <div class="flex flex-wrap justify-center gap-3 mb-12 scroll-animate">
                 <button onclick="filterPortfolio('all')" class="portfolio-filter active px-5 py-2 rounded-full text-sm font-semibold transition-all bg-primary text-white" data-filter="all">All</button>
                 <button onclick="filterPortfolio('websites')" class="portfolio-filter px-5 py-2 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-filter="websites">Websites</button>
                 <button onclick="filterPortfolio('social')" class="portfolio-filter px-5 py-2 rounded-full text-sm font-semibold transition-all bg-gray-200 dark:bg-dark-card text-gray-600 dark:text-gray-400" data-filter="social">Social Media</button>
