@@ -123,6 +123,16 @@ tailwind.config = {
   #siteHeader.scrolled .nav-link{ color:#0A1F44; }
   #siteHeader.scrolled .logo-text{ color:#0A1F44; }
   #siteHeader.scrolled .topbar{ display:none; }
+  #siteHeader.scrolled #menuBtn{
+  background:rgba(10,31,68,0.06);
+  border:1px solid rgba(10,31,68,0.15);
+  color:#0A1F44;
+}
+#siteHeader.scrolled #menuBtn:hover{
+  background:rgba(0,87,255,0.1);
+  border-color:rgba(0,87,255,0.4);
+  color:#0057FF;
+}
   .nav-link{ position:relative; transition:color .3s; }
   .nav-link::after{ content:''; position:absolute; bottom:-6px; left:0; width:0; height:2px; background:linear-gradient(90deg,#0057FF,#00C2FF); border-radius:2px; transition:width .35s cubic-bezier(.16,1,.3,1); }
   .nav-link:hover::after,.nav-link.active::after{ width:100%; }
